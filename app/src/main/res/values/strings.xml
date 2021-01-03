@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Jenny Su - Tic Tac Toe</string>
+
+    <string name="player_one_name_label">Player 1:</string>
+    <string name="player_one_point_amount">0</string>
+    <string name="player_two_name_label">Player 2:</string>
+    <string name="player_two_point_amount">0</string>
+    <string name="new_game_button">NEW GAME</string>
+    <string name="winner_message_label">Round 1</string>
+
+    <string name="board_button_00"></string>
+    <string name="board_button_01"></string>
+    <string name="board_button_02"></string>
+    <string name="board_button_10"></string>
+    <string name="board_button_11"></string>
+    <string name="board_button_12"></string>
+    <string name="board_button_20"></string>
+    <string name="board_button_21"></string>
+    <string name="board_button_22"></string>
+
+    <string name="player_one_get_name_label">Player 1 Name:</string>
+    <string name="player_one_get_name_input">Player 1</string>
+    <string name="is_computer_label">Computer</string>
+    <string name="player_two_get_name_label">Player 2 Name:</string>
+    <string name="player_two_get_name_input">Player 2</string>
+    <string name="play_type_label">Type of Play:</string>
+
+    <string-array name="play_type_array">
+        <item>Infinitely</item>
+        <item>Best of</item>
+        <item>First one to</item>
+    </string-array>
+
+    <string name="game_end_principle_label">Number of Rounds:</string>
+    <string name="game_end_principle_input">1</string>
+    <string name="number_of_rounds">Number of Rounds:</string>
+    <string name="number_of_points">Number of Points:</string>
+
+    <string name="game_start_button">START GAME</string>
+</resources>

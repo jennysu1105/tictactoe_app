@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionsActivity">
+
+    <TextView
+        android:id="@+id/playerOneGetNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="660dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/player_one_get_name_label"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/playerOneGetNameInput"
+        android:layout_width="294dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="648dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:maxLength="8"
+        android:text="@string/player_one_get_name_input"
+        android:singleLine="true"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerOneGetNameLabel" />
+
+    <TextView
+        android:id="@+id/isComputerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="572dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/is_computer_label"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/isComputerSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="584dp"
+        android:layout_marginLeft="284dp"
+        android:layout_marginStart="284dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/isComputerLabel" />
+
+    <TextView
+        android:id="@+id/playerTwoGetNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="528dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/player_two_get_name_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playerTwoGetNameInput" />
+
+    <EditText
+        android:id="@+id/playerTwoGetNameInput"
+        android:layout_width="294dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="516dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:maxLength="8"
+        android:text="@string/player_two_get_name_input"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/playTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="404dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/play_type_label"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/playTypeSpinner"
+        android:layout_width="326dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="396dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playTypeLabel" />
+
+    <TextView
+        android:id="@+id/gameEndPrincipleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/game_end_principle_label"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playTypeLabel" />
+
+    <EditText
+        android:id="@+id/gameEndPrincipleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:text="@string/game_end_principle_input"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/gameEndPrincipleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/playTypeSpinner" />
+
+    <Button
+        android:id="@+id/gameStartButton"
+        android:layout_width="251dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/game_start_button"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameEndPrincipleInput" />
+</android.support.constraint.ConstraintLayout>

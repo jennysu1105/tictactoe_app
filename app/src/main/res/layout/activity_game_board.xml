@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameBoardActivity">
+
+    <LinearLayout
+        android:layout_width="546dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="248dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/boardButton00"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:text="@string/board_button_00"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/boardButton01"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:text="@string/board_button_01"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/boardButton02"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="40dp"
+            android:height="20dp"
+            android:text="@string/board_button_02"
+            android:textSize="36sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="546dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="432dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/boardButton10"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:text="@string/board_button_10"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/boardButton11"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:text="@string/board_button_11"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/boardButton12"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="40dp"
+            android:height="20dp"
+            android:text="@string/board_button_12"
+            android:textSize="36sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="546dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="616dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/boardButton20"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:text="@string/board_button_20"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/boardButton21"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:text="@string/board_button_21"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/boardButton22"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:width="40dp"
+            android:height="20dp"
+            android:text="@string/board_button_22"
+            android:textSize="36sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playerOneNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/player_one_name_label"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerTwoNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/player_two_name_label"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerOneNameLabel" />
+
+    <TextView
+        android:id="@+id/playerOnePointAmout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/player_one_point_amount"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/playerOneNameLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerTwoPointAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/player_two_point_amount"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/playerTwoNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/playerOnePointAmout" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="283dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/new_game_button"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winnerMessageLabel"
+        android:layout_width="547dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/winner_message_label"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newGameButton" />
+
+</android.support.constraint.ConstraintLayout>
